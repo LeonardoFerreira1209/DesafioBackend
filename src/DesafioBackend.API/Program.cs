@@ -79,11 +79,11 @@ try
     applicationbuilder
        .Lifetime.ApplicationStarted
            .Register(() => Log.Debug(
-                   $"[LOG DEBUG] - Aplicação inicializada com sucesso: [AUTHIO.API]\n"));
+                   $"[LOG DEBUG] - Aplicação inicializada com sucesso: [DESAFIO.API]\n"));
 
     applicationbuilder.Run();
 }
 catch (Exception exception)
 {
-    Log.Error($"[LOG ERROR] - Ocorreu um erro ao inicializar a aplicacao [AUTHIO.API] - {exception.Message}\n"); throw;
+    Log.Error($"[LOG ERROR] - Ocorreu um erro ao inicializar a aplicacao [DESAFIO.API] - {exception.Message}\n"); throw;
 }
